@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .shopping-cart {
+            background-color: #f0f8fd;
+            padding: 20px;
+        }
+        .order-summary {
+            background-color: #e9ecef;
+            padding: 20px;
+        }
+        .quantity {
+            display: flex;
+            align-items: center;
+        }
+        .quantity button {
+            width: 30px;
+            height: 30px;
+        }
+        .quantity input {
+            width: 50px;
+            text-align: center;
+        }
+        .food-img{
+            width: 10rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Shopping Cart -->
+        <div class="col-md-8 shopping-cart">
+            <h2>Shopping Cart</h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-3"><strong>Product</strong></div>
+                <div class="col-md-3"><strong>Quantity</strong></div>
+                <div class="col-md-3"><strong>Price</strong></div>
+                <div class="col-md-3"><strong>Total</strong></div>
+            </div>
+            <hr>
+            <!-- Cart Item 1 -->
+            <div id="cart">
+                
+            </div>
+            <hr>
+
+            
+        </div>
+        <!-- Order Summary -->
+        <div class="col-md-4 order-summary">
+            <h2>Order Summary</h2>
+            <hr>
+            <p>Total Items: <span id="totalitem" class="float-right"></span></p>
+            <p>Total Price: <span id="totalprice" class="float-right"></span></p>
+            <form>
+                <div class="form-group">
+                    <label for="promo-code">Promo Code</label>
+                    <input type="text" class="form-control" id="promo-code" placeholder="Enter promo code">
+                </div>
+                <button type="button" class="btn btn-outline-success btn-block mb-3">Apply</button>
+            </form>
+            <hr>
+            <button id="checkout" class="btn btn-outline-danger btn-block">Checkout</button>
+            <button class="btn btn-outline-secondary btn-block mt-3">Continue Shopping</button>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+
+<script>
+    // JavaScript for quantity buttons
+    document.querySelectorAll('.quantity button').forEach(button => {
+        button.addEventListener('click', function () {
+            let input = this.parentElement.querySelector('input');
+            let value = parseInt(input.value);
+            if (this.textContent === '-') {
+                if (value > 1) {
+                    input.value = value - 1;
+                }
+            } else {
+                input.value = value + 1;
+            }
+        });
+    });
+</script>
+<script src="https://js.paystack.co/v2/inline.js"></script>
+<script src="./jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="./cart.js"></script>
+</body>
+</html>

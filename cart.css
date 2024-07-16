@@ -1,0 +1,135 @@
+
+footer .search{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+footer .search input{
+
+    border: none;
+    background-color: transparent;
+
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+main{
+  height: 100%;
+}
+
+.fa-search{
+  position: relative;
+  right: 3.5rem;
+  /* top: 0.5rem; */
+}
+
+
+.carousel ol{
+  list-style-type: none;
+}
+
+.carousel ol li{
+  max-width: 4px !important;
+  max-height: 4px !important;
+  border: 1px solid white !important;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.w{
+  height: 2.5rem;
+  font-size: 10px;
+  width: 15rem;
+  padding-left: 1rem;
+}
+
+
+.nav{
+  height: 4rem;
+  box-shadow: 1px 1px 0.2rem rgb(158, 157, 157);
+}
+
+.cart{
+  height: 8rem;
+  display: flex;
+  align-items: center;
+}
+
+.b1{
+  width: 10rem;
+  height: 3rem;
+  border-radius: 0.2rem;
+}
+
+.b2{
+  width: 9rem;
+  height: 3rem;
+  border-radius: 0.2rem;
+}
+
+#input{
+  width: 12rem;
+  height: 2.5rem;
+  border: 1px solid grey;
+  outline: none;
+  border-radius: 0.2rem;
+  padding-left: 1rem;
+  font-size: small;
+  
+}
+
+.color{
+  width: 10rem;
+  border: 1px solid black;
+  
+}
+
+main .row{
+  width: 90vw;
+}
+
+
+
+.my-btn{
+  width: 15rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+}
+
+
+.number{
+  width: 4rem;
+  padding: 0.5rem;
+  outline: none;
+  box-shadow: 1px 1px 0.2rem grey;
+}
+
+
+.badge{
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-small ;
+}
+
+
+
+/* mr yusuf footer correction */
+
+
+
+
+

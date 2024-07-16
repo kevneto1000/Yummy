@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+
+            <!-- Sign up image -->
+            <div class="col-md-6 my-5">
+                <img src="./assets/img/hero-img.png" alt="">
+            </div>
+            
+            <!-- Sign up form -->
+            <div class="col-md-6 m-auto my-5 d-md-block d-none">
+                <h2 class="mb-5">Sign Up</h2>
+                <form id="signupform" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="" class="form-label">First Name</label>
+                        <input name="first_name" type="first-name" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Last Name</label>
+                        <input name="last_name" type="last-name" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                      <label for="" class="form-label">Email</label>
+                      <input name="email" type="email" class="form-control" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="" class="form-label">Password</label>
+                      <input name="password" type="password" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Upload Picture</label>
+                        <input name="profile" type="file">
+                    </div>
+                    <button type="submit" class="btn btn-dark">SUBMIT</button>
+                </form>
+                <p class="my-2">Already have an account? <a href="./login.html">Login Here</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
